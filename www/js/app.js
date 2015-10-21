@@ -21,7 +21,7 @@ angular.module('preciosa', ['ionic'])
   $stateProvider.state('carrito', {
     url: "/carrito",
     cache: false,
-    template: "<vista-carrito-compras></vista-carrito-compras>"
+    template: "<preciosa-app></preciosa-app>"
   });
   $urlRouterProvider.otherwise('/carrito');
 })

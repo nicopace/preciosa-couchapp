@@ -8,5 +8,9 @@
     "ng-pouch": "~0.0.1",
     "angular-pouchdb": "~4.0.0",
     "pouchdb": "~5.0.0"
+  },
+  "resolutions": {
+    "pouchdb": "~5.0.0",
+    "angular": "1.4.3"
   }
 }
