@@ -1,1 +1,15 @@
-hola mundo
+<ion-modal-view>
+<div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Nombre del producto</span>
+    <input type="text" placeholder="Coca Cola 1/2 L" ng-model="item.nombre">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Precio</span>
+    <input type="number" placeholder="0.99" ng-model="item.precio">
+  </label>
+  <div class="padding">
+     <button class="button button-block button-positive" ng-click="saveAndClose(item)">Guardar producto</button>
+  </div>
+</div>
+</ion-modal-view>

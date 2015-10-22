@@ -7,7 +7,8 @@
   "dependencies": {
     "ng-pouch": "~0.0.1",
     "angular-pouchdb": "~4.0.0",
-    "pouchdb": "~5.0.0"
+    "pouchdb": "~5.0.0",
+    "ng-pouchdb": "git@github.com:danielzen/ng-pouchdb.git"
   },
   "resolutions": {
     "pouchdb": "~5.0.0",

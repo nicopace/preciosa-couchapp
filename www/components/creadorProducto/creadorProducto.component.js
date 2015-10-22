@@ -10,17 +10,29 @@ angular.module('preciosa')
       }).then(function(modal) {
         $scope.modal = modal
       });
-
-      $scope.openModal = function() {
-        $scope.modal.show()
-      };
-
     },
     controller: function($scope, DataService) {
-      $scope.save = save;
+      $scope.closeModal = closeModal;
+      $scope.openModal = openModal;
+      $scope.saveAndClose = saveAndClose;
+      $scope.item = {
+        nombre: "",
+        precio: 0.0
+      };
 
+      function closeModal() {
+        $scope.modal.hide();
+      };
+
+      function openModal() {
+        $scope.modal.show()
+      }
       function save(item) {
-        DataService.getData().push(item);
+        DataService.save(item);
+      }
+      function saveAndClose(item) {
+        save(item);
+        closeModal();
       }
     },
     controllerAs: 'productos'
