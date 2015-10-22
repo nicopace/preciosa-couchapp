@@ -1,6 +1,12 @@
-<lista-productos></lista-productos>
+<ion-header-bar align-title="center" class="bar-positive">
+  <h1 class="title">Productos</h1>
+  <div class="buttons">
+    <button class="button button-balanced" ng-click="openModal()"><i class="ion-plus-circled"></i> Nuevo producto</button>
+  </div>
+</ion-header-bar>
 
-<ion-footer-bar>
-    <button class="button" ng-click="openModal()">Agregar producto</button>
-    <creador-producto></creador-producto>
-</ion-footer-bar>
+<ion-content class="has-header">
+   <lista-productos></lista-productos>
+</ion-content>
+
+<creador-producto></creador-producto>

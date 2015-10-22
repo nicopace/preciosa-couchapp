@@ -17,7 +17,7 @@ angular.module('preciosa')
       $scope.saveAndClose = saveAndClose;
       $scope.item = {
         nombre: "",
-        precio: 0.0
+        precio: ""
       };
 
       function closeModal() {
